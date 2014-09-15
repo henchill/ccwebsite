@@ -1,4 +1,4 @@
-{% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <!-- Some of the css and js were borrowed from a bootstrap template at http://startbootstrap.com/templates/modern-business/index.html -->
 <html>
@@ -12,15 +12,15 @@
         <title>{% block title %}Chocolate City @ MIT{% endblock %}</title>
 
         <!-- Bootstrap Core CSS -->
-        <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link href="{{ STATIC_URL }}css/modern-business.css" rel="stylesheet">
+        <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
 
         <!-- Custom Fonts -->
-        <link href="{{ STATIC_URL }}font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="{% static 'font-awesome-4.1.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
 
-        <link href="{{ STATIC_URL }}css/main.css" rel="stylesheet">
+        <link href="{% static 'css/main.css' %}" rel="stylesheet">
     </head>
     <body>
         <!-- Navigation -->
@@ -83,10 +83,10 @@
         
 
         <!-- jQuery Version 1.11.0 -->
-        <script src="{{ STATIC_URL }}js/jquery-1.11.0.js"></script>
+        <script src="{% static 'js/jquery-1.11.0.js' %}"></script>
 
         <!-- Bootstrap Core JavaScript -->
-        <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
         <!-- Script to Activate the Carousel -->
         <script>
